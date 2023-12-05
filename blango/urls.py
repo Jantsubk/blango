@@ -19,3 +19,11 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+# other imports
+import blog.views
+
+urlpatterns = [
+    # other patterns
+    path("", blog.views.index)
+]
