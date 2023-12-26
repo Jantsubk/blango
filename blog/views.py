@@ -38,9 +38,7 @@ def post_detail(request, slug):
     )
 
 def post_table(request):
-    return render(
-        request, "blog/post-table.html", {"post_list_url": reverse("post-list")}
-    )
+    return render(request, "blog/post-table.html")
 
 def get_ip(request):
   from django.http import HttpResponse
